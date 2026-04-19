@@ -93,7 +93,6 @@ INSERT INTO clientes (nombre_completo, identificacion, direccion, telefono, corr
 ('Sebastián Vargas', '36914725', 'Calle 30 #6-10 Piedecuesta', '3178901234', 'sebastian@gmail.com'),
 ('Camila Jiménez', '47025836', 'Carrera 12 #25-35 Girón', '3189012345', 'camila@hotmail.com');
 
--- 2. SEDES (12)
 INSERT INTO sedes (nombre_sede, ubicacion, capacidad_almacenamiento, encargado) VALUES
 ('Sede Girón Centro', 'Calle Principal #1-10 Girón', 500, 'Roberto Díaz'),
 ('Sede Bucaramanga Norte', 'Av. Quebradaseca #45-20 Bucaramanga', 800, 'Ana Milena Torres'),
@@ -108,7 +107,6 @@ INSERT INTO sedes (nombre_sede, ubicacion, capacidad_almacenamiento, encargado) 
 ('Sede Mensulí', 'Carrera Mensulí #3-20 Girón', 480, 'Jairo Alberto León'),
 ('Sede Autopista', 'Autopista Bucaramanga-Girón Km 3', 900, 'Rosa Elena Medina');
 
--- 3. PRODUCTOS (12)
 INSERT INTO productos (nombre, categoria, precio, volumen_ml, stock_actual, stock_minimo) VALUES
 ('Coca-Cola', 'Cola', 2500.00, 350, 100, 20),
 ('Pepsi', 'Cola', 2300.00, 350, 80, 20),
@@ -123,7 +121,6 @@ INSERT INTO productos (nombre, categoria, precio, volumen_ml, stock_actual, stoc
 ('Agua Brisa', 'Agua', 1900.00, 600, 150, 30),
 ('Red Bull', 'Energizante', 7500.00, 250, 25, 10);
 
--- 4. PEDIDOS (12)
 INSERT INTO pedidos (fecha_pedido, id_cliente, id_sede, total_sin_iva, total_con_iva) VALUES
 ('2026-01-05', 1, 1, 25000.00, 29750.00),
 ('2026-01-10', 2, 2, 18000.00, 21420.00),
@@ -138,7 +135,6 @@ INSERT INTO pedidos (fecha_pedido, id_cliente, id_sede, total_sin_iva, total_con
 ('2026-03-15', 9, 2, 33000.00, 39270.00),
 ('2026-03-20', 10, 3, 41000.00, 48790.00);
 
--- 5. DETALLE_PEDIDO (12)
 INSERT INTO detalle_pedido (id_pedido, id_producto, cantidad, subtotal) VALUES
 (1, 1, 5, 12500.00),
 (1, 3, 5, 12500.00),
