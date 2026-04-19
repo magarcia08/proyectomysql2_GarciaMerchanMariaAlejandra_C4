@@ -29,9 +29,15 @@ CLIENTES ──────< PEDIDOS >────── SEDES
 - Un **pedido** puede tener varios **productos** (eso es el detalle del pedido), y un producto puede aparecer en muchos pedidos.
 - Cada vez que cambia el precio de un **producto**, se guarda un registro en **auditoria_precios**.
 
-> Para ver el diagrama visual, podés crearlo en [draw.io](https://app.diagrams.net/) o [Lucidchart](https://www.lucidchart.com/) usando las tablas y relaciones descritas arriba. Las claves foráneas están marcadas con `FK` y las primarias con `PK`.
+![Modelo Entidad-Relación](imgs/modelo-entidad-relacion.drawio.png)
+
+![Diagrama SQL](imgs/diagrama_sql.png)
 
 ---
+
+## Creación de tablas
+
+![Creación de tablas](imgs/cap/creacion_tablas.png)
 
 ## Tablas del sistema
 
@@ -60,6 +66,8 @@ SELECT calcular_total_con_iva(1) AS total_con_iva;
 -- Resultado esperado: 29750.00
 ```
 
+![Resultado función calcular_total_con_iva](imgs/cap/resultado_primera_funcion.png)
+
 ---
 
 ### `validar_stock(id_producto, cantidad)`
@@ -77,6 +85,8 @@ SELECT validar_stock(1, 50) AS resultado;
 SELECT validar_stock(1, 200) AS resultado;
 -- Resultado: 'No hay stock suficiente'
 ```
+
+![Resultado función validar_stock](imgs/cap/resultado_segunda_funcion.png)
 
 ---
 
